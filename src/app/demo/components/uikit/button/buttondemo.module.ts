@@ -7,6 +7,7 @@ import { RippleModule } from 'primeng/ripple';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 
+
 @NgModule({
 	imports: [
 		CommonModule,
@@ -15,6 +16,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 		RippleModule,
 		SplitButtonModule,
 		ToggleButtonModule,
+
 	],
 	declarations: [ButtonDemoComponent]
 })

@@ -24,7 +24,7 @@
 				</div>
 				<div class="col-12 mb-2 lg:col-4 lg:mb-0">
 					<span class="p-input-icon-right">
-						<input type="text" pInputText placeholder="Search"/>
+						<input type="text" pInputText placeholder="Search" [disabled]="true"/>
 						<i class="pi pi-search"></i>
 					</span>
 				</div>
@@ -164,7 +164,7 @@
 			<p-selectButton [options]="paymentOptions" [(ngModel)]="valSelect2" [multiple]="true" optionLabel="name"></p-selectButton>
 		</div>
 	</div>
-	
+
 	<div class="col-12">
 		<div class="card">
 			<h5>InputGroup</h5>
