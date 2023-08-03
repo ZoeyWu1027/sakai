@@ -2261,6 +2261,15 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
             background-color: var(--primary-main-o-4);
         }
     }
+    &.p-button-info {
+        color: var(--surface-on-surface);
+        background-color: var(--white);
+        &:hover,
+        &:focus {
+            background-color: var(--white);
+            color: rgba(28, 29, 28, 0.68);
+        }
+    }
 }
 
 .p-button.p-button-sm {
@@ -2766,14 +2775,14 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
     &.p-button-link-secondary {
         color: var(--secondary-main);
         &:enabled:hover,
-        &:enabled:focus{
+        &:enabled:focus {
             color: var(--secondary-main);
         }
     }
     &.p-button-neture {
         color: var(--surface-on-surface);
         &:enabled:hover,
-        &:enabled:focus{
+        &:enabled:focus {
             color: var(--surface-on-surface);
         }
     }
