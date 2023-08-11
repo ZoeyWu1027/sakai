@@ -44,6 +44,8 @@ export class TableDemoComponent implements OnInit {
 
     loading: boolean = true;
 
+    valCheck: string[] = [];
+
     @ViewChild('filter') filter!: ElementRef;
 
     constructor(private customerService: CustomerService, private productService: ProductService) { }
@@ -134,5 +136,5 @@ export class TableDemoComponent implements OnInit {
         table.clear();
         this.filter.nativeElement.value = '';
     }
-    
+
 }

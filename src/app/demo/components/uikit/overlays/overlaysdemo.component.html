@@ -91,7 +91,8 @@
                 <h3 style="font-weight:normal">Top Sidebar</h3>
             </p-sidebar>
 
-            <p-sidebar [(visible)]="visibleSidebar4" position="bottom" [baseZIndex]="10000">
+            <p-sidebar [(visible)]="visibleSidebar4" header="title" position="bottom" [baseZIndex]="10000">
+                <ng-template pTemplate="header">Header Content</ng-template>
                 <h3 style="font-weight:normal">Bottom Sidebar</h3>
             </p-sidebar>
 

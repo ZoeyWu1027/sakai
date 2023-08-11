@@ -288,10 +288,10 @@ export class MenusComponent implements OnInit {
         this.breadcrumbItems.push({ label: 'Item' });
 
         this.routeItems = [
-            { label: 'Personal', routerLink: 'personal' },
-            { label: 'Seat', routerLink: 'seat' },
-            { label: 'Payment', routerLink: 'payment' },
-            { label: 'Confirmation', routerLink: 'confirmation' },
+            { label: '醫令收費', routerLink: 'personal' },
+            { label: '醫令批價', routerLink: 'seat' },
+            { label: '醫令批價2', routerLink: 'payment' },
+            { label: '醫令批價3', routerLink: 'confirmation' },
         ];
 
         this.megaMenuItems = [
