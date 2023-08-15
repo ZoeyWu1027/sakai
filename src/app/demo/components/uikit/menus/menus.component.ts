@@ -280,12 +280,10 @@ export class MenusComponent implements OnInit {
         ];
 
         this.breadcrumbItems = [];
-        this.breadcrumbItems.push({ label: 'Electronics' });
-        this.breadcrumbItems.push({ label: 'Computer' });
-        this.breadcrumbItems.push({ label: 'Notebook' });
-        this.breadcrumbItems.push({ label: 'Accessories' });
-        this.breadcrumbItems.push({ label: 'Backpacks' });
-        this.breadcrumbItems.push({ label: 'Item' });
+        this.breadcrumbItems.push({ label: '門診醫囑系統' });
+        this.breadcrumbItems.push({ label: '醫囑開立' });
+        this.breadcrumbItems.push({ label: '醫囑開立-2' });
+        this.breadcrumbItems.push({ label: '醫囑開立-3' });
 
         this.routeItems = [
             { label: '醫令收費', routerLink: 'personal' },

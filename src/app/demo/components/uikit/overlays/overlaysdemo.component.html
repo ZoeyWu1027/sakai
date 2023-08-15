@@ -2,12 +2,26 @@
     <p-toast></p-toast>
     <div class="col-12 lg:col-6">
         <div class="card">
-            <h5>Dialog</h5>
+            <h5>彈出視窗 (問號/警告/錯誤)Dialog</h5>
             <p-dialog header="Dialog" [(visible)]="display" [modal]="true" showEffect="fade" [style]="{width: '30vw'}" [breakpoints]="{'960px': '75vw'}">
                 <div class="lg:col-12 mb-2 p-0">
 					<span class="p-fluid p-input-icon-left">
 						<i class="pi pi-search"></i>
 						<input type="text" pInputText placeholder="Search"/>
+					</span>
+				</div>
+                <div class="lg:col-12 mb-2 p-0">
+					<span class="p-fluid p-dialog-info question">
+						<i class="pi pi-question-circle"></i>
+                        <span>確認動作</span>
+					</span>
+                    <span class="p-fluid p-dialog-info waring">
+						<i class="pi pi-exclamation-triangle"></i>
+                        <span>警告訊息</span>
+					</span>
+                    <span class="p-fluid p-dialog-info waring">
+						<i class="pi pi-times-circle"></i>
+                        <span>錯誤訊息</span>
 					</span>
 				</div>
                 <p class="line-height-3 m-0">

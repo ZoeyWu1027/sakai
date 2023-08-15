@@ -24,8 +24,27 @@
     <div class="col-12 md:col-6">
         <div class="card">
             <h5>AccordionPanel</h5>
+
+
+            <p-accordion class="w-full">
+                <p-accordionTab>
+                    <ng-template pTemplate="header">
+                        <div class="flex align-items-center justify-content-between w-full">
+                            <span class="p-accordion-header-text vertical-align-middle">抽審描述</span>
+                            <button pButton pRipple type="button" icon="pi pi-window-maximize" class="p-button-rounded p-button-text mr-2"></button>
+                        </div>
+                    </ng-template>
+                    <ng-template pTemplate="content">
+                        <p class="m-0">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                            culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                        </p>
+                    </ng-template>
+                </p-accordionTab>
+            </p-accordion>
+
             <p-accordion>
-                <p-accordionTab header="Header I" [selected]="true" class="line-height-3 m-0">
+                <p-accordionTab header="抽審描述"  [selected]="true" class="line-height-3 m-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { SelectItem } from 'primeng/api';
+import { Calendar } from 'primeng/calendar';
 import { CountryService } from 'src/app/demo/service/country.service';
-
+import { PrimeNGConfig } from 'primeng/api';
 @Component({
     templateUrl: './inputdemo.component.html'
 })
 export class InputDemoComponent implements OnInit {
-    
+
+    date: Date[] | undefined;
+
     countries: any[] = [];
 
     filteredCountries: any[] = [];
@@ -43,6 +46,10 @@ export class InputDemoComponent implements OnInit {
 
     valueKnob = 20;
 
+
+    //有使用到日曆中文版需搭配此CalendarService
+    private CalendarService = inject(PrimeNGConfig);
+
     constructor(private countryService: CountryService) { }
 
     ngOnInit() {
@@ -63,6 +70,14 @@ export class InputDemoComponent implements OnInit {
             { name: 'Option 2', value: 2 },
             { name: 'Option 3', value: 3 }
         ];
+
+        //有使用到日曆中文版需搭配此CalendarService function
+
+        this.CalendarService.setTranslation ({
+            today: '今日', // 自定義 "Today" 文字為 "今天"
+            clear: '清除', // 自定義 "Clear" 文字
+          });
+
     }
 
     filterCountry(event: any) {
@@ -77,4 +92,6 @@ export class InputDemoComponent implements OnInit {
 
         this.filteredCountries = filtered;
     }
+
+
 }
