@@ -105,21 +105,135 @@
     --spacing-xxl: 32px;
 
     // Shadows
-    $raisedButtonShadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.20), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);;
-    $focusShadow: 0 0 0 3px #CCE7E0;
-    $inputOverlayShadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.10);
-    $cardShadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    $overlayContainerShadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px -7px rgba(0, 0, 0, 0.20);
-    $overlayMenuShadow :0px 2px 12px 0px rgba(0, 0, 0, 0.10);
-
+    $raisedButtonShadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    $focusShadow: 0 0 0 3px #cce7e0;
+    $inputOverlayShadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    $cardShadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    $overlayContainerShadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12),
+        0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+    $overlayMenuShadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
 * {
     box-sizing: border-box;
-    font-family: "Noto Sans TC", Helvetica Neue Light, Helvetica Neue, Helvetica,
-        Arial, Lucida Grande, sans-serif;
     font-size: 1rem;
     font-weight: normal;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--surface-on-surface);
+    line-height: 1.25rem;
+    letter-spacing: 0.01rem;
+}
+
+//text standard
+h1 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    letter-spacing: 0.08rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.07rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.03rem;
+}
+
+h4,
+.title-l {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.0275rem;
+}
+
+h5,
+.title-m {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.025rem;
+}
+
+h6,
+.title-s {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.0225rem;
+}
+
+.body-l {
+    color: var(--surface-on-surface);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.01125rem;
+}
+
+.body-m,
+p {
+    color: var(--surface-on-surface);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.01rem;
+}
+.body-s {
+    color: var(--surface-on-surface);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.00875rem;
+}
+.label-l {
+    color: var(--surface-on-surface);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.01125rem;
+}
+.label-m {
+    color: var(--surface-on-surface);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+.label-s {
+    color: var(--surface-on-surface);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.00875rem;
+}
+.caption-l {
+    color: var(--surface-on-surface);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+.caption-m {
+    color: var(--surface-on-surface);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.00875rem;
+}
+.caption-s {
+    color: var(--surface-on-surface);
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.125rem;
+    letter-spacing: 0.0075rem;
 }
 
 .p-component {
@@ -4988,8 +5102,8 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-accordion .p-accordion-content {
     padding: 0 8px 4px;
     border: 0 none;
-    background: #ffffff;
-    color: rgba(0, 0, 0, 0.87);
+    background: var(--white);
+    color: var(--surface-on-surface);
     border-top: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -5043,10 +5157,20 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+.section {
+    padding: var(--spacing-sm);
+    border-radius: 12px;
+    background-color: var(--surface-section);
+    gap: 4px;
+}
+
+.content-layout {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
 
 .p-card {
-    background: #ffffff;
-    color: rgba(0, 0, 0, 0.87);
+    background: var(--surface-card);
+    color: var(--surface-on-surface);
     border: 0.5px solid var(--outline-variant);
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -5182,7 +5306,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
     padding: 4px 8px;
     border: 1px solid var(--outline-variant);
     background: var(--surface-card);
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--surface-on-surface);
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     border-top: 0 none;
