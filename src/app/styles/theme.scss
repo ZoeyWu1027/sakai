@@ -2362,19 +2362,19 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 }
 .p-button.p-button-text {
     background-color: transparent;
-    color: var(--primary-main);
+    color: var(--surface-on-surface);
     border-color: transparent;
     padding: 4px;
     border-radius: 20px;
 }
 .p-button.p-button-text:enabled:hover {
     background: var(--primary-container);
-    color: var(--primary-main);
+    color: var(--surface-on-surface);
     border-color: transparent;
 }
 .p-button.p-button-text:enabled:active {
     background: var(--primary-container);
-    color: var(--primary-main);
+    color: var(--surface-on-surface);
     border-color: transparent;
 }
 .p-button.p-button-text.p-button-plain {
@@ -2402,7 +2402,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-button.p-button-text .p-button-label {
     font-weight: 700;
     font-size: 1.125rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     letter-spacing: 0.01rem;
     transition-duration: 0.2s;
 }
@@ -3522,7 +3522,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
     outline: 0 none;
 }
 .p-datatable .p-datatable-tbody > tr {
-    background: #ffffff;
+    background: var(--white);
     color: var(--surface-on-surface);
     transition: none;
     &:hover {
@@ -3584,7 +3584,7 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-datatable.p-datatable-hoverable-rows
     .p-datatable-tbody
     > tr:not(.p-highlight):hover {
-    background: rgba(0, 0, 0, 0.04);
+    background: var(--surface-ground);
     color: rgba(0, 0, 0, 0.87);
 }
 .p-datatable .p-column-resizer-helper {
@@ -5183,28 +5183,28 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
 .p-card .p-card-body {
     padding: 4px 8px;
     .p-button-text {
-        margin-bottom: 4px;
+        margin-bottom: 8px;
     }
 }
 .p-card .p-card-title {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.75rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 .p-card .p-card-subtitle {
     font-weight: 300;
     font-size: 0.875rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     letter-spacing: 0.00875rem;
     color: var(--surface-on-surface);
 }
 .p-card .p-card-content {
     padding: 0;
-    margin: 4px 0;
+    margin: 0;
 }
 .p-card .p-card-footer {
-    padding: 0.75rem 0 0 0;
+    padding: 8px 0 0 0;
 }
 
 .p-divider .p-divider-content {
@@ -7652,22 +7652,26 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
     font-weight: 700;
     padding: 0.25rem 0.4rem;
     border-radius: 4px;
+    .p-tag-value {
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
 }
 .p-tag.p-tag-success {
-    background-color: #689f38;
-    color: #ffffff;
+    background-color: var(--secondary-main);
+    color: var(--white);
 }
 .p-tag.p-tag-info {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--primary-container);
+    color: var(--surface-on-surface);
 }
 .p-tag.p-tag-warning {
-    background-color: #fbc02d;
-    color: #212529;
+    background-color: var(--tertiary-main);
+    color: var(--white);
 }
 .p-tag.p-tag-danger {
-    background-color: #d32f2f;
-    color: #ffffff;
+    background-color: var(--error-main);
+    color: var(--white);
 }
 .p-tag .p-tag-icon {
     margin-right: 0.25rem;
@@ -8504,16 +8508,16 @@ p-cascadeselect.ng-dirty.ng-invalid .p-cascadeselect:not(.p-disabled).p-focus {
     animation: checkbox-check 125ms 50ms linear forwards;
 }
 .p-checkbox:not(.p-checkbox-disabled):hover {
-    box-shadow: 0 0 1px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 1px 7px rgba(0, 0, 0, 0.04);
 }
 .p-checkbox:not(.p-checkbox-disabled).p-checkbox-focused {
-    box-shadow: 0 0 1px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 1px 7px rgba(0, 0, 0, 0.12);
 }
 .p-checkbox.p-checkbox-checked:not(.p-checkbox-disabled):hover {
-    box-shadow: 0 0 1px 10px rgba(0, 109, 80, 0.04);
+    box-shadow: 0 0 1px 7px rgba(0, 109, 80, 0.04);
 }
 .p-checkbox.p-checkbox-checked:not(.p-checkbox-disabled).p-checkbox-focused {
-    box-shadow: 0 0 1px 10px rgba(0, 109, 80, 0.12);
+    box-shadow: 0 0 1px 7px rgba(0, 109, 80, 0.12);
 }
 
 .p-input-filled .p-checkbox .p-checkbox-box {
@@ -9326,18 +9330,18 @@ p-multiselect.ng-dirty.ng-invalid .p-multiselect:not(.p-disabled).p-focus {
     border-color: var(--primary-main);
 }
 .p-radiobutton:not(.p-radiobutton-disabled):hover {
-    box-shadow: 0 0 1px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 1px 7px rgba(0, 0, 0, 0.04);
 }
 .p-radiobutton:not(.p-radiobutton-disabled).p-radiobutton-focused {
-    box-shadow: 0 0 1px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 1px 7px rgba(0, 0, 0, 0.12);
 }
 .p-radiobutton.p-radiobutton-checked:not(.p-radiobutton-disabled):hover {
-    box-shadow: 0 0 1px 10px rgba(0, 109, 80, 0.04);
+    box-shadow: 0 0 1px 7px rgba(0, 109, 80, 0.04);
 }
 .p-radiobutton.p-radiobutton-checked:not(
         .p-radiobutton-disabled
     ).p-radiobutton-focused {
-    box-shadow: 0 0 1px 10px rgba(0, 109, 80, 0.12);
+    box-shadow: 0 0 1px 7px rgba(0, 109, 80, 0.12);
 }
 
 .p-input-filled .p-radiobutton .p-radiobutton-box {
@@ -9388,7 +9392,8 @@ p-multiselect.ng-dirty.ng-invalid .p-multiselect:not(.p-disabled).p-focus {
     transform: scale(0.7);
 }
 .p-slider .p-slider-handle:focus {
-    box-shadow: 0 0 1px 10px rgba(255, 64, 129, 0.2);
+    box-shadow: 0 0 1px 10px
+    rgba(0, 109, 80, 0.2);
 }
 .p-slider.p-slider-sliding .p-slider-handle {
     transform: scale(1);
